@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">s
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,28 +13,28 @@
 </head>
 <body>
     <header class="header">
-      <div class="container content-box">
+      <div class="container grid">
         <nav class="main-nav">
-          <a class="logo link" href="../index.html"><span class="firstpart-logo">Web</span><span
-              class="lastpart-logo">Studio</span></a>
-          <ul class="list site-nav">
-            <li class="item"><a class="link current-link" href="../index.html">Студия</a></li>
-            <li class="item"><a class="link" href="./html/portfolio.html">Портфолио</a></li>
-            <li class="item"><a class="link" href="">Контакты</a></li>
+          <a class="logo link" href="../index.html"><span class="logo__firstpart">Web</span><span
+              class="logo__lastpart">Studio</span></a>
+          <ul class="site-nav list">
+            <li class="site-nav__item"><a class="site-nav__link site-nav__link--current link" href="../index.html">Студия</a></li>
+            <li class="site-nav__item"><a class="site-nav__link link" href="./html/portfolio.html">Портфолио</a></li>
+            <li class="site-nav__item"><a class="site-nav__link link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="list auth-nav">
-          <li class="item">
-            <a class="link" href="mailto:info@devstudio.com">
-              <svg class="icon">
+        <ul class="auth-nav list">
+          <li class="auth-nav__item">
+            <a class="auth-nav__link link" href="mailto:info@devstudio.com">
+              <svg class="auth-nav__icon">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item">
-            <a class="link" href="tel:+380961111111">
-              <svg class="icon">
+          <li class="auth-nav__item">
+            <a class="auth-nav__link link" href="tel:+380961111111">
+              <svg class="auth-nav__icon">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -51,32 +51,32 @@
           <button class="button" data-modal-open type="button">Заказать услугу</button>
         </div>
       </section>
-      <section class="section benefits">
+      <section class="benefits section">
         <div class="container">
           <h2 class="section-title visually-hidden">Наши преимущества</h2>
           <ul class="list flex-list">
-            <li class="benefits-item flex-item icon-antenna">
-              <h3 class="title">Внимание к деталям</h3>
+            <li class="benefits__item flex-item benefits__item--antenna">
+              <h3 class="benefits__title">Внимание к деталям</h3>
               <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li class="benefits-item flex-item icon-clock">
-              <h3 class="title">Пунктуальность</h3>
+            <li class="benefits__item flex-item benefits__item--clock">
+              <h3 class="benefits__title">Пунктуальность</h3>
               <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li class="benefits-item flex-item icon-diagram">
-              <h3 class="title">Планирование</h3>
+            <li class="benefits__item flex-item benefits__item--diagram">
+              <h3 class="benefits__title">Планирование</h3>
               <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li class="benefits-item flex-item icon-astronaut">
-              <h3 class="title">Современные технологии</h3>
+            <li class="benefits__item flex-item benefits__item--astronaut">
+              <h3 class="benefits__title">Современные технологии</h3>
               <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section directions">
+      <section class="directions section">
         <div class="container">
-          <h2 class="title section-title">Чем мы занимаемся</h2>
+          <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list grid-list">
             <li class="grid-item">
               <div class="direction-thumb">
@@ -111,10 +111,10 @@
           </ul>
         </div>
       </section>
-      <section class="section team main-bg">
+      <section class="team section main-bg">
         <div class="container">
-          <h2 class="title section-title">Наша команда</h2>
-          <ul class="list flex-list">
+          <h2 class="section-title">Наша команда</h2>
+          <ul class="team__list list flex-list">
             <li class="team-item lite-bg">
               <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" height="260">
               <h3 class="title">Игорь Демьяненко</h3>
@@ -260,7 +260,7 @@
       </section>
       <section class="section clients">
         <div class="container">
-          <h2 class="title section-title">Постоянные клиенты</h2>
+          <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="list clients-list">
             <li class="clients-item">
               <a href="" class="link clients-link" target="_blank" rel="noopener noreferrer">
@@ -314,8 +314,8 @@
           <div class="flex-half">
             <ul class="list flex-list">
               <li class="flex-half">
-                <a href="./" class="logo link"><span class="firstpart-logo">Web</span><span
-                    class="lastpart-logo">Studio</span></a>
+                <a href="./" class="logo link"><span class="logo__firstpart">Web</span><span
+                    class="logo__lastpart">Studio</span></a>
                 <address>
                   <ul class="list address-list">
                     <li class="address-item"><a class="link" href="https://goo.gl/maps/pzZy5znTT9oQ8gvY8">г. Киев, пр-т Леси
