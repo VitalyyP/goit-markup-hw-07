@@ -98,9 +98,8 @@ address {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.grid {
+.content-in-row {
   display: flex;
-  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: space-between;
 }
