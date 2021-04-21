@@ -18,9 +18,9 @@
         <a class="logo link" href="../index.html"><span class="logo__firstpart">Web</span><span
             class="logo__lastpart">Studio</span></a>
         <ul class="site-nav list">
-          <li class="site-nav__item"><a class="site-nav__link site-nav__link--current link"
+          <li class="site-nav__item"><a class="site-nav__link link"
               href="../index.html">Студия</a></li>
-          <li class="site-nav__item"><a class="site-nav__link link" href="./portfolio.html">Портфолио</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--current link" href="./portfolio.html">Портфолио</a></li>
           <li class="site-nav__item"><a class="site-nav__link link" href="">Контакты</a></li>
         </ul>
       </nav>
@@ -55,8 +55,8 @@
           <li class="item"><button class="button" type="button">Дизайн</button></li>
           <li class="item"><button class="button" type="button">Маркетинг</button></li>
         </ul>
-        <ul class="list portfolio-list grid-list">
-          <li class="grid-item">
+        <ul class="list portfolio-list grid">
+          <li class="grid__item">
             <a class="link portfolio-link" href="">
               <div class="portfolio-item">
                 <div class="portfolio-image">
@@ -73,7 +73,7 @@
               </div>
             </a> 
           </li>
-          <li class="grid-item">
+          <li class="grid__item">
             <a class="link portfolio-link" href="">
               <div class="portfolio-item">
                 <div class="portfolio-image">
@@ -90,7 +90,7 @@
               </div>
             </a>
           </li>
-          <li class="grid-item">
+          <li class="grid__item">
             <a class="link portfolio-link" href="">
               <div class="portfolio-item">
                 <div class="portfolio-image">
@@ -108,7 +108,7 @@
               </div>
             </a>
           </li>
-          <li class="grid-item">
+          <li class="gri__item">
             <a class="link portfolio-link" href="">
               <div class="portfolio-item">
                 <div class="portfolio-image">
@@ -126,7 +126,7 @@
               </div>
             </a>
           </li>
-          <li class="grid-item">
+          <li class="grid__item">
             <a class="link portfolio-link" href="">
               <div class="portfolio-item">
                 <div class="portfolio-image">
@@ -144,7 +144,7 @@
               </div>
             </a>
           </li>
-          <li class="grid-item">
+          <li class="grid__item">
             <a class="link portfolio-link" href="">
               <div class="portfolio-item">
                 <div class="portfolio-image">
@@ -162,7 +162,7 @@
               </div>
             </a>
           </li>
-          <li class="grid-item">
+          <li class="grid__item">
             <a class="link portfolio-link" href="">
               <div class="portfolio-item">
                 <div class="portfolio-image">
@@ -180,7 +180,7 @@
               </div>
             </a>
           </li>
-          <li class="grid-item">
+          <li class="grid__item">
             <a class="link portfolio-link" href="">
               <div class="portfolio-item">
                 <div class="portfolio-image">
@@ -198,7 +198,7 @@
               </div>
             </a>
           </li>
-          <li class="grid-item">
+          <li class="grid__item">
             <a class="link portfolio-link" href="">
               <div class="portfolio-item">
                 <div class="portfolio-image">
@@ -224,10 +224,10 @@
   </main>
   <footer class="footer dark-bg">
     <div class="container">
-      <div class="flex-list">
-        <div class="flex-half">
-          <ul class="list flex-list">
-            <li class="flex-half">
+      <div class="grid">
+        <div class="grid__item grid__item--half">
+          <ul class="list grid">
+            <li class="grid__item grid__item--half">
               <a href="../index.html" class="logo link"><span class="logo__firstpart">Web</span><span
                   class="logo__lastpart">Studio</span></a>
               <address>
@@ -240,7 +240,7 @@
                 </ul>
               </address>
             </li>
-            <li class="flex-half">
+            <li class="grid__item grid__item--half">
               <div class="socials">
                 <p>Присоединяйтесь</p>
                 <ul class="list social-icons">
@@ -277,7 +277,7 @@
             </li>
           </ul>
         </div>
-        <div class="flex-half">
+        <div class="grid__item grid__item--half">
           <form class="form-email">
             <label class="label-email" for="email">Подпишитесь на рассылку</label>
             <input type="email" class="input-email" name="email" id="email" placeholder="E-mail">
