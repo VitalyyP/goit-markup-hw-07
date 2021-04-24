@@ -389,9 +389,10 @@ p {
 }
 
 .button {
+  height: 50px;
+  width: 200px;
   border-radius: 4px;
   border-color: transparent;
-  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -410,26 +411,14 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 200px;
-  height: 50px;
   padding-left: 28px;
   padding-right: 27px;
   margin-left: 370px;
   border: 1px;
 }
 
-.button--form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 50px;
-  padding: 10px;
-}
-
 .button--filter {
+  height: 38px;
   padding: 6px 22px;
   font-weight: 500;
   line-height: 1.63;
@@ -921,10 +910,11 @@ p {
 }
 
 .page-title {
+  width: 696px;
+  height: 120px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
-  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
