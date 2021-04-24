@@ -311,23 +311,23 @@
     <footer class="footer">
       <div class="container">
         <div class="grid">
-          <div class="grid__item--half">
+          <div class="grid__item grid__item--half">
             <ul class="list grid">
-              <li class="grid__item--half">
+              <li class="grid__item grid__item--half">
                 <a href="./" class="logo link">Web<span class="logo__last-part--dark-bg">Studio</span></a>
-                <address>
-                  <ul class="list address-list">
-                    <li class="address-item"><a class="link" href="https://goo.gl/maps/pzZy5znTT9oQ8gvY8">г. Киев, пр-т Леси
+                <address class="address">
+                  <ul class="list">
+                    <li class="address__item"><a class="link address__link" href="https://goo.gl/maps/pzZy5znTT9oQ8gvY8">г. Киев, пр-т Леси
                         Украинки,
                         26</a></li>
-                    <li class="address-item"><a class="link" href="mailto:info@example.com">info@example.com</a></li>
-                    <li class="address-item"><a class="link" href="tel:+380991111111">+38 096 111 11 11</a></li>
+                    <li class="address__item"><a class="link address__link" href="mailto:info@example.com">info@example.com</a></li>
+                    <li class="address__item"><a class="link address__link" href="tel:+380991111111">+38 096 111 11 11</a></li>
                   </ul>
                 </address>
               </li>
-              <li class="grid__item--half">
+              <li class="grid__item grid__item--half">
                 <div class="socials">
-                  <p>Присоединяйтесь</p>
+                  <p class="footer__call">Присоединяйтесь</p>
                   <ul class="social-list social-list--left list ">
                     <li class="social-item">
                       <a href="" class="social-item__link social-item__link--dark-bg link" target="_blank" rel="noopener noreferrer">
@@ -362,13 +362,13 @@
               </li>
             </ul>
           </div>
-          <div class="grid__item--half">
-            <form class="form-email">
-              <label class="label-email" for="email">Подпишитесь на рассылку</label>
-                <input type="email" class="input-email" name="email" id="email" placeholder="E-mail">
-              <button type="submit"class="button button-email">
+          <div class="subscribe grid__item grid__item--half">
+            <p class="footer__call">Подпишитесь на рассылку</p>
+            <form class="subscribe__form">
+                <input type="email" class="subscribe__input" name="email" id="email" placeholder="E-mail">
+              <button type="submit"class="button button--email">
                 Подписаться
-                <svg class="icon">
+                <svg class="subscribe__icon">
                   <use href="./images/sprite.svg#icon-send"></use>
                 </svg>
               </button>
@@ -379,42 +379,42 @@
     </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+      <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
       <form action="" class="form" autocomplete="off">
-        <div class="form-field">
-          <label for="name" class="form-label">Имя</label>
-            <svg class="icon">
+        <div class="form__field">
+          <label for="name" class="form__label">Имя</label>
+            <svg class="form__icon">
               <use href="./images/sprite.svg#icon-person"></use>
             </svg>
-          <input type="text" class="form-input" name="name" id="name">
+          <input type="text" class="form__input" name="name" id="name">
         </div>
-        <div class="form-field">
-          <label for="name" class="form-label">Телефон</label>
-          <svg class="icon">
+        <div class="form__field">
+          <label for="name" class="form__label">Телефон</label>
+          <svg class="form__icon">
             <use href="./images/sprite.svg#icon-phone"></use>
           </svg>
-          <input type="text" class="form-input" name="name" id="name">
+          <input type="text" class="form__input" name="name" id="name">
         </div>
-        <div class="form-field">
-          <label for="email" class="form-label">Почта</label>
-          <svg class="icon">
+        <div class="form__field">
+          <label for="email" class="form__label">Почта</label>
+          <svg class="form__icon">
             <use href="./images/sprite.svg#icon-email"></use>
           </svg>
-          <input type="email" class="form-input" name="name" id="email">
+          <input type="email" class="form__input" name="name" id="email">
         </div>
-        <div class="form-field">
-          <label for="textarea" class="form-label">Комментарий</label>
-          <textarea name="" id="textarea" class="form-textarea" placeholder="Введите текст"></textarea>
+        <div class="form__field">
+          <label for="textarea" class="form__label">Комментарий</label>
+          <textarea name="" id="textarea" class="form__textarea" placeholder="Введите текст"></textarea>
         </div>
         <div class="form-checkbox">
-          <input type="checkbox" class="form-checkbox-input" name="policy" id="policy">
-          <label class="form-label-checkbox" for="policy">Соглашаюсь с рассылкой и принимаю 
-            <a class="link" href="">Условия договора</a>
+          <input type="checkbox" class="form-checkbox__input" name="policy" id="policy">
+          <label class="form-checkbox__label" for="policy">Соглашаюсь с рассылкой и принимаю 
+            <a class="form-checkbox__link link" href="">Условия договора</a>
           </label>
         </div>
-        <button type="submit" class="button">Отправить</button>
+        <button type="submit" class="button button--form">Отправить</button>
       </form>
-      <button class="button-close" data-modal-close>
+      <button class="button-close button-close--modal" data-modal-close>
         <svg class="icon">
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>
