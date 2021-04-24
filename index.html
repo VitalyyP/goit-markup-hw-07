@@ -5,17 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Создание сайтов любой сложности</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css">  
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/styles.min.css">
 </head>
 <body>
     <header class="header">
       <div class="container content-in-row">
         <nav class="main-nav">
-          <a class="logo link" href="../index.html">Web<span class="logo__last-part">Studio</span></a>
+          <a class="logo logo--header link" href="../index.html">Web<span class="logo__last-part-dark">Studio</span></a>
           <ul class="site-nav list">
             <li class="site-nav__item"><a class="site-nav__link site-nav__link--current link" href="../index.html">Студия</a></li>
             <li class="site-nav__item"><a class="site-nav__link link" href="./html/portfolio.html">Портфолио</a></li>
@@ -314,7 +310,7 @@
           <div class="grid__item grid__item--half">
             <ul class="list grid">
               <li class="grid__item grid__item--half">
-                <a href="./" class="logo link">Web<span class="logo__last-part--dark-bg">Studio</span></a>
+                <a href="./" class="logo logo--footer link">Web<span class="logo__last-part-light">Studio</span></a>
                 <address class="address">
                   <ul class="list">
                     <li class="address__item"><a class="link address__link" href="https://goo.gl/maps/pzZy5znTT9oQ8gvY8">г. Киев, пр-т Леси
@@ -366,7 +362,7 @@
             <p class="footer__call">Подпишитесь на рассылку</p>
             <form class="subscribe__form">
                 <input type="email" class="subscribe__input" name="email" id="email" placeholder="E-mail">
-              <button type="submit"class="button button--email">
+              <button type="submit" class="button button--email">
                 Подписаться
                 <svg class="subscribe__icon">
                   <use href="./images/sprite.svg#icon-send"></use>
@@ -380,31 +376,31 @@
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
-      <form action="" class="form" autocomplete="off">
+      <form class="form" autocomplete="off">
         <div class="form__field">
-          <label for="name" class="form__label">Имя</label>
+          <label for="user-name" class="form__label">Имя</label>
             <svg class="form__icon">
               <use href="./images/sprite.svg#icon-person"></use>
             </svg>
-          <input type="text" class="form__input" name="name" id="name">
+          <input type="text" class="form__input" name="name" id="user-name">
         </div>
         <div class="form__field">
-          <label for="name" class="form__label">Телефон</label>
+          <label for="user-phone-number" class="form__label">Телефон</label>
           <svg class="form__icon">
             <use href="./images/sprite.svg#icon-phone"></use>
           </svg>
-          <input type="text" class="form__input" name="name" id="name">
+          <input type="text" class="form__input" name="name" id="user-phone-number">
         </div>
         <div class="form__field">
-          <label for="email" class="form__label">Почта</label>
+          <label for="user-email" class="form__label">Почта</label>
           <svg class="form__icon">
             <use href="./images/sprite.svg#icon-email"></use>
           </svg>
-          <input type="email" class="form__input" name="name" id="email">
+          <input type="email" class="form__input" name="name" id="user-email">
         </div>
         <div class="form__field">
           <label for="textarea" class="form__label">Комментарий</label>
-          <textarea name="" id="textarea" class="form__textarea" placeholder="Введите текст"></textarea>
+          <textarea name="comments" id="textarea" class="form__textarea" placeholder="Введите текст"></textarea>
         </div>
         <div class="form-checkbox">
           <input type="checkbox" class="form-checkbox__input" name="policy" id="policy">
@@ -415,7 +411,7 @@
         <button type="submit" class="button button--form">Отправить</button>
       </form>
       <button class="button-close button-close--modal" data-modal-close>
-        <svg class="icon">
+        <svg class="button-close__icon">
           <use href="./images/sprite.svg#icon-close"></use>
         </svg>
       </button>
